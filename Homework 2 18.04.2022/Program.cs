@@ -10,18 +10,18 @@ namespace Homework_2_18._04._2022
             
                 Console.Write("Eded daxil edin: ");
                 int num1 = Convert.ToInt32(Console.ReadLine());
-                int num2 = num1 % 7;
+                int mod = num1 % 7;
                 int total = 0;
-                int num3 = 7 / 2;
-                if (num2 <= num3)
+                int remainder = 7 / 2;
+                if (mod <= remainder)
                 {
-                    total = num1 - num2;
+                    total = num1 - mod;
                     Console.Write("Verilmis edede yaxin 7-nin boluneni: ");
                     Console.WriteLine(total); ;
                 }
-                else if (num2 > num3)
+                else if (mod > remainder)
                 {
-                    total = num1 + 7 - num2;
+                    total = num1 + 7 - mod;
                     Console.Write("Verilmis edede yaxin 7-nin boluneni: ");
                     Console.WriteLine(total);
                 }
